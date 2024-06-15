@@ -1,0 +1,68 @@
+.logo-container{
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+}
+.logo{
+  top: 50%;
+  left:50%;
+  width: 115%;
+  min-width: 1600px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  opacity: 0.05;
+  z-index: 0;
+  /*pointer-events: none;*/
+}
+
+.presentation{
+  position: relative;
+  top: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*border: 2px solid black;*/
+  border-radius: 20px;
+  height: 300px;
+  width:700px;
+  gap: 36px;
+  overflow: hidden;
+  padding: 10px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.05) 
+  );
+}
+
+.p-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.p-container p{
+  width: 500px;
+  text-align: justify;
+}
+
+.memoji{
+  height: 100px;
+}
+
+.contact{
+  color: black;
+  font-weight: 500;
+}
+
+.contact:hover{
+  color: rgba(0, 0, 0, 0.7);
+}
