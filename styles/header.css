@@ -146,5 +146,27 @@
   color: rgb(255, 255, 255);
 }
 
+@media(max-width: 1280px) {
+  .menu li {
+    position: relative;
+    display: flex;
+    margin: 0 16px;
+    list-style: none;
+    padding: 0 8px;
+  }
+
+}
+
+@media(max-width: 920px){
+  .header{
+    padding: 20px 30px;
+  }
+  .menu,.social{
+    display: none;
+  }
+  .name,.name a{
+    width: 100%;
+  }
+}
 
 

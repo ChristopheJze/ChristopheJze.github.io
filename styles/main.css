@@ -54,6 +54,17 @@
   text-align: justify;
 }
 
+.memoji-container{
+  display: flex;
+  background-color: rgba(207, 207, 207, 0.568);
+  height: 120px;
+  width: 110px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
 .memoji{
   height: 100px;
 }
@@ -69,6 +80,7 @@
 
 .scroll-down{
   height: 150px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,6 +91,8 @@
   font-weight: 500;
   color: rgb(112, 112, 112);
 }
+
+
 
 .scroll-down i {
   font-size: 28px;
@@ -95,18 +109,24 @@ a{
 }
 
 .myworks{
-  display: flex;
-  position: relative;
-  justify-content: center;
-  gap: 50px;
   
+  display: grid;
+  height: auto;
+  width: 100%;
+  padding: 0 50px;
+  position: relative;
+  grid-template-rows: repeat(auto-fit, minmax(600px,1fr));
+  grid-template-columns: repeat(auto-fit,400px);
+  gap: 60px;
+  justify-content:center;
 }
 
 .work-container{
+  position: relative;
   display: flex;
   flex-direction: column;
-  height: 600px;
-  width:400px;
+  height: 100%;
+  width:100%;
   border-radius: 20px;
   overflow: hidden;
   gap: 5px;
@@ -117,7 +137,9 @@ a{
   -webkit-backdrop-filter: blur(10px);
 }
 
-.sufilog-cover{
+
+
+.sufilog-cover,.F1_suspension-cover{
   position: relative;
   height: 100%;
 }
@@ -145,4 +167,42 @@ a{
 .work-place,.work-date{
   color: gray;
   padding-left: 20px;
+}
+
+@media(max-width: 920px) {
+  .presentation{
+    display: flex;
+    width:80%;
+    gap: 24px;
+    overflow: hidden;
+    padding: 20px;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .p-container p{
+    width: 100%;
+    text-align: start;
+  }
+  .p-container{
+    padding: 12px;
+  }
+
+  .myworks{
+    padding: 0 25px;
+    grid-template-rows: repeat(auto-fit, minmax(450px,500px));
+    grid-template-columns: repeat(auto-fit,minmax(300px,400px));
+    gap: 30px;
+    justify-content:center;
+  }
+
+  .img-container{
+    width: 150%;
+    height: 100%;
+  }
+
+  .F1_suspension-cover,.minif-cover,.sufilog-cover{
+    
+    width: 100%;
+  }
+
 }
